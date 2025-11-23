@@ -21,3 +21,5 @@ Jinja2==3.1.4
 langsmith
 openai
 pandas
+faiss-cpu
+rapidocr-onnxruntime

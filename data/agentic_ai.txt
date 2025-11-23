@@ -1,0 +1,55 @@
+# Content for the Agentic AI text file
+file_content = """
+# Agentic AI: A Technical Overview
+
+## 1. What is Agentic AI?
+Unlike traditional LLM interactions (Zero-shot/Few-shot) where the model acts as a passive engine awaiting a prompt, Agentic AI refers to systems where the LLM acts as a reasoning engine that can:
+1. Perceive its environment.
+2. Reason about how to solve a problem.
+3. Break down complex goals into smaller tasks (Planning).
+4. Use external tools (Function Calling) to execute actions.
+5. Reflect on the results and iterate.
+
+## 2. Core Components of an Agent
+
+### A. Profile/Persona
+The specific role and constraints assigned to the agent (e.g., "You are a Senior Python Engineer...").
+
+### B. Memory
+- **Short-term:** Context window, passing messages between steps.
+- **Long-term:** Vector databases (RAG) or SQL databases to recall past interactions or knowledge.
+
+### C. Planning
+- **Chain of Thought (CoT):** Breaking down steps linearly.
+- **Tree of Thoughts:** Exploring multiple possibilities.
+- **ReAct (Reason + Act):** The standard loop where the model thinks, decides to act, observes the output, and thinks again.
+
+### D. Tools (Action Space)
+The capabilities given to the Agent. Common examples:
+- Web Search (Google/Bing API)
+- Calculators / Python REPL
+- Database Connectors
+- Custom APIs (e.g., Jira, Slack, AWS)
+
+## 3. Common Architectures
+
+### Single Agent
+A solitary loop (e.g., LangChain AgentExecutor) that has access to all tools and tries to solve the query alone. Good for straightforward tasks.
+
+### Multi-Agent Systems (MAS)
+Specialized agents collaborating.
+- **Supervisor Pattern:** One "Boss" agent breaks down the task and delegates to "Worker" agents (e.g., a Coder, a Researcher, a Reviewer).
+- **Hierarchical:** Agents managing other agents.
+- **Joint Chat:** Agents discussing a problem in a shared message history until a consensus is reached.
+
+## 4. Frameworks
+- **LangChain / LangGraph:** For building stateful, graph-based agent flows.
+- **AutoGPT:** One of the first autonomous agent experiments.
+- **Microsoft AutoGen:** A framework specifically for multi-agent conversation patterns.
+- **CrewAI:** A high-level framework for orchestrating role-playing agents.
+
+## 5. Challenges
+- **Infinite Loops:** Agents getting stuck repeating the same failed action.
+- **Hallucination:** Using tools incorrectly or imagining tool outputs.
+- **Cost/Latency:** Agentic workflows require multiple LLM calls, increasing time and token usage.
+"""
