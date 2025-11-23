@@ -1,0 +1,4 @@
+{"timestamp": "2025-11-23T20:57:53.462985Z", "level": "info", "event": "Running in Local mode : .env loaded"}
+{"timestamp": "2025-11-23T20:57:53.462985Z", "level": "info", "event": "loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-23T20:57:53.462985Z", "level": "info", "event": "loaded OPENAI_API_KEY from individual env var"}
+{"missing_keys": ["GEMINI_API_KEY"], "timestamp": "2025-11-23T20:57:53.462985Z", "level": "error", "event": "Missing required API keys"}

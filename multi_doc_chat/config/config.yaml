@@ -1,6 +1,6 @@
 embedding_model:
   provider : "google"
-  model_name : "model/text-embedding-004"
+  model_name : "models/text-embedding-004"
 
 retriever :
   top_k : 10

@@ -24,3 +24,4 @@ pandas
 faiss-cpu
 rapidocr-onnxruntime
 pathlib
+-e .

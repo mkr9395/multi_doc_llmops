@@ -1,0 +1,8 @@
+{"timestamp": "2025-11-23T20:58:58.537893Z", "level": "info", "event": "Running in Local mode : .env loaded"}
+{"timestamp": "2025-11-23T20:58:58.537893Z", "level": "info", "event": "loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-11-23T20:58:58.537893Z", "level": "info", "event": "loaded OPENAI_API_KEY from individual env var"}
+{"timestamp": "2025-11-23T20:58:58.537893Z", "level": "info", "event": "loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_...", "OPENAI_API_KEY": "sk-p...", "GOOGLE_API_KEY": "AIza..."}, "timestamp": "2025-11-23T20:58:58.537893Z", "level": "info", "event": "API KEYS loaded"}
+{"config_keys": ["embedding_model", "retriever", "llm"], "timestamp": "2025-11-23T20:58:58.537893Z", "level": "info", "event": "YAML config loaded"}
+{"model": "model/text-embedding-004", "timestamp": "2025-11-23T20:58:58.537893Z", "level": "info", "event": "Loading embedding model"}
+{"error": "'API key for GOOGLE_API_KEy is missing'", "timestamp": "2025-11-23T20:58:58.537893Z", "level": "error", "event": "Error loading embedding model"}

@@ -27,11 +27,11 @@ class CustomLogger:
             handlers = [console_handler, file_handler]
         )
         
-        structlog.configure(processor = [
+        structlog.configure(processors = [
             structlog.processors.TimeStamper(fmt = "iso", utc=True, key = "timestamp"),
             structlog.processors.add_log_level,
             structlog.processors.EventRenamer(to="event"),
-            structlog.processors.JSONRender()
+            structlog.processors.JSONRenderer()
             ],
                             logger_factory = structlog.stdlib.LoggerFactory(),
                             cache_logger_on_first_use = True
