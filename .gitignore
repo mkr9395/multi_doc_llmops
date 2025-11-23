@@ -2,4 +2,4 @@
 venv/
 .env
 
-multi_doc_chat\utils\details.txt
+multi_doc_chat/utils/details.txt
